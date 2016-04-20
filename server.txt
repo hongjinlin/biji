@@ -1,4 +1,4 @@
--------- CentOS安装GitLab --------
+﻿-------- CentOS安装GitLab --------
 http://www.centoscn.com/image-text/install/2015/0320/4929.html
 
 -------- nginx调优安装（泉哥） --------
