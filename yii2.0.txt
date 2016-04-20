@@ -1,0 +1,9 @@
+﻿-------- count,groupby的使用方法 --------
+  class Likes extends \yii\db\ActiveRecord.
+$query = Video::find()
+       ->select(['video.*', 'COUNT(likes.video_id) AS countlike'])
+       ->join('LEFT JOIN', Likes::tableName(), 'videos.id=likes.video_id')
+       ->groupBy('videos.id')
+       ->orderBy(['countlike' => SORT_DESC])
+       ->limit(10);
+$data = asArray()->$query->all();
