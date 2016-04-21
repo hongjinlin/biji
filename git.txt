@@ -10,3 +10,6 @@
 合并某分支到当前分支：git merge <name>
 
 删除分支：git branch -d <name>
+
+-------- 引用其他项目为子目录 --------
+git submodule add https://github.com/chaconinc/DbConnector
